@@ -4,6 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RegisterFragment">
+    <ImageView
+        android:src="@drawable/bg2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 <LinearLayout
     android:orientation="vertical"
@@ -22,11 +26,51 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <LinearLayout
+            android:background="#80FFFFFF"
+            android:layout_margin="20dp"
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"></LinearLayout>
+            android:layout_height="wrap_content">
+            <!--Avatar-->
+            <ImageView
+                android:id="@+id/imAvatar"
+                android:padding="30dp"
+                android:src="@drawable/avatar"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerInside"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+            <!--Name-->
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:inputType="text"
+                android:hint="Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <!--User-->
+            <EditText
+                android:id="@+id/edtUser"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:inputType="text"
+                android:hint="User"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <!--Password-->
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
-        
+        </LinearLayout>
+
+
     </ScrollView>
 
 </LinearLayout>
