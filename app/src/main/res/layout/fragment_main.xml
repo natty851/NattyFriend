@@ -4,10 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainFragment">
-<ImageView
-    android:src="@drawable/bg2"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" />
+
 <LinearLayout
     android:background="#8BFFFFFF"
     android:padding="20dp"
@@ -22,17 +19,37 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <!--User-->
-    <EditText
-        android:inputType="text"
-        android:hint="User"
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_action_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+         <EditText
+             android:inputType="text"
+             android:hint="User"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" />
+    </LinearLayout>
     <!--Password-->
-    <EditText
-        android:inputType="textPassword"
-        android:hint="PassWord"
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_action_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:inputType="textPassword"
+            android:hint="PassWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
     <!--Login-->
     <Button
         android:text="Login"
@@ -45,6 +62,7 @@
     android:textColor="@color/colorAccent"
     android:layout_marginTop="8dp"
     android:layout_gravity="center_horizontal"
+    android:textStyle="bold"
     android:text="New Register"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content" />
