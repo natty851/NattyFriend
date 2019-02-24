@@ -5,101 +5,107 @@
     android:layout_height="match_parent"
     tools:context=".RegisterFragment">
 
-<LinearLayout
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <!--Toolbar-->
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        android:background="@color/colorPrimary"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"/>
-    <!--Content-->
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
-            android:background="#80FFFFFF"
-            android:layout_margin="20dp"
-            android:orientation="vertical"
+        <!--Toolbar-->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <!--Avatar-->
-            <ImageView
-                android:id="@+id/imAvatar"
-                android:padding="30dp"
-                android:src="@drawable/avatar"
-                android:layout_gravity="center_horizontal"
-                android:scaleType="centerInside"
-                android:layout_width="match_parent"
-                android:layout_height="200dp" />
-            <!--Name-->
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_marginRight="50dp"
-                android:layout_marginLeft="50dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <ImageView
-                    android:layout_gravity="center_vertical"
-                    android:src="@drawable/ic_action_name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-            <EditText
-                android:id="@+id/edtName"
-                android:inputType="text"
-                android:hint="Name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-            </LinearLayout>
-            <!--User-->
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_marginRight="50dp"
-                android:layout_marginLeft="50dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+        <!--Content-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="#80FFFFFF"
+                android:orientation="vertical">
+                <!--Avatar-->
                 <ImageView
-                    android:layout_gravity="center_vertical"
-                    android:src="@drawable/ic_action_user"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-                <EditText
-                    android:id="@+id/edtUser"
-                    android:inputType="text"
-                    android:hint="User"
+                    android:id="@+id/imAvatar"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="30dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/avatar" />
+                <!--Name-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_action_name" />
+
+                    <EditText
+                        android:id="@+id/edtName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Name"
+                        android:inputType="text" />
+                </LinearLayout>
+                <!--User-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_action_user" />
+
+                    <EditText
+                        android:id="@+id/edtUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="User"
+                        android:inputType="text" />
+                </LinearLayout>
+                <!--Password-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_action_password" />
+
+                    <EditText
+                        android:id="@+id/edtPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Password"
+                        android:inputType="textPassword" />
+                </LinearLayout>
+
             </LinearLayout>
-            <!--Password-->
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_marginRight="50dp"
-            android:layout_marginLeft="50dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:layout_gravity="center_vertical"
-                android:src="@drawable/ic_action_password"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <EditText
-                android:id="@+id/edtPassword"
-                android:inputType="textPassword"
-                android:hint="Password"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
-
-        </LinearLayout>
 
 
-    </ScrollView>
+        </ScrollView>
 
-</LinearLayout>
+    </LinearLayout>
 
 </FrameLayout>
