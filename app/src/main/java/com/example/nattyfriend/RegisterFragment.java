@@ -112,6 +112,11 @@ public class RegisterFragment extends Fragment {
             // None Choose Image
             myAlert.normalDialog("None Choose Image", "Please Choose Avatar");
 
+        } else if (name.isEmpty() || user.isEmpty()||password.isEmpty()) {
+//            Have Space
+            myAlert.normalDialog("Have Space","Please Fill Blank");
+        } else {
+
         }
     } //CheckValue
 
